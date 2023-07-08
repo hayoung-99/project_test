@@ -11,5 +11,5 @@ jobs:
       - uses: alex-page/github-project-automation-plus@v0.8.3
         with:
           project: test
-          column: In Progress
+          column: Done
           repo-token: ${{ secrets.BOT_TOKEN }}
