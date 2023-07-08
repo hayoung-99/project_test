@@ -1,4 +1,4 @@
-name: Move assigned issue(s) into In Review
+name: Move assigned issue(s) into In Progress
 
 on:
   issues:
@@ -8,8 +8,8 @@ jobs:
   automate-project-columns:
     runs-on: ubuntu-latest
     steps:
-        uses: alex-page/github-project-automation-plus@v0.8.3
+      - uses: alex-page/github-project-automation-plus@v0.8.3
         with:
           project: test
-          column: In Review
+          column: In Progress
           repo-token: ${{ secrets.BOT_TOKEN }}
