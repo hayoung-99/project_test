@@ -8,9 +8,8 @@ jobs:
   automate-project-columns:
     runs-on: ubuntu-latest
     steps:
-      - name: GitHub Project Automation+
         uses: alex-page/github-project-automation-plus@v0.8.3
         with:
           project: test
           column: In Review
-          repo-token: ${{ secrets.GHPROJECT_TOKEN }}
+          repo-token: ${{ secrets.BOT_TOKEN }}
